@@ -7,7 +7,7 @@ describe 'A game' do
       expect(game.box).to eq('FAKE')
     end
     it 'has dice' do
-      skip
+      expect(game.dice).to eq('FAKE')
     end
   end
 
