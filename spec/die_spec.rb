@@ -3,12 +3,13 @@ require_relative '../lib/die'
 describe 'A die' do
 
   describe 'attributes' do
-    it 'TODO' do
-      skip
+    let(:die) { Die.new }
+    it 'exists' do
+      die
     end
 
-    it 'TODO' do
-      skip
+    it 'has a number of sides' do
+      expect(die.number_of_sides()).to eq(6)
     end
   end
 
