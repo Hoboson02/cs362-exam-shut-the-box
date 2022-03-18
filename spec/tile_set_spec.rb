@@ -1,11 +1,11 @@
 require_relative '../lib/tile_set'
 
 describe 'A tile set' do
-
+  let(:tile_set) { TileSet.new() }
   describe '::generate' do
 
     it 'returns an array of 9 tiles by default' do
-      raise "Start here"
+      tile_set
     end
 
     it 'returns an array of tiles of a specified length' do
