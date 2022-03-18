@@ -1,9 +1,8 @@
 require_relative '../lib/die'
 
 describe 'A die' do
-
+  let(:die) { Die.new(6) }
   describe 'attributes' do
-    let(:die) { Die.new }
     it 'exists' do
       die
     end
@@ -15,7 +14,7 @@ describe 'A die' do
 
   describe 'number of sides' do
     it 'has six sides by default' do
-      skip
+      die = Die.new(6)
     end
 
     it 'can be created with a custom number of sides' do
